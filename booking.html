@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buchen - SkiGap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- emailJS martinstrungeerb@gmail.com service ID: service_gbc99nf -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("0To0EIApvxLbf3Kd3");
+  })();
+</script>
+
+</head>
+
+
+
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">SkiGap</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#about" class="nav-about">Über Uns</a></li>
+                    <li><a href="index.html#services" class="nav-services">Kurse</a></li>
+                    <li><a href="index.html#gallery" class="nav-gallery">Galerie</a></li>
+                    <li><a href="index.html#testimonials" class="nav-testimonials">Erfahrungen</a></li>
+                    <li><a href="index.html#pricing" class="nav-pricing">Preise</a></li>
+                    <li><a href="index.html#contact" class="nav-contact">Kontakt</a></li>
+                    <li><a href="booking.html" class="nav-booking active">Buchen</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <!-- Booking Hero Section -->
+    <section id="booking-hero" class="section dark-section">
+        <div class="container">
+            <h1 class="section-title booking-title">Skilehrerausbildung Buchen</h1>
+            <p class="section-subtitle booking-subtitle">Füllen Sie das Formular aus, um Ihren Platz für die Saison 2025/26 zu sichern</p>
+        </div>
+    </section>
+    <!-- Booking Form Section -->
+    <section id="booking-section" class="section light-section">
+        <div class="container">
+            <div class="booking-container">
+                <div class="booking-info">
+                    <h2 class="booking-info-title">Programm Details</h2>
+                    <div class="program-details">
+                        <div class="detail-item">
+                            <span class="detail-label booking-dates-label">Daten:</span>
+                            <span class="detail-value booking-dates-value">Dezember 2025 - März/April 2026</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label booking-location-label">Ort:</span>
+                            <span class="detail-value booking-location-value">Bad Gastein, Österreich</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label booking-price-label">Preis:</span>
+                            <span class="detail-value booking-price-value">€5.995</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label booking-deposit-label">Anzahlung:</span>
+                            <span class="detail-value booking-deposit-value">€1.000 (bei Buchung fällig)</span>
+                        </div>
+                    </div>
+                    <h3 class="booking-includes-title">Im Preis enthalten:</h3>
+                    <ul class="includes-list">
+                        <li class="booking-include-item1">Österreichische Skilehrerausbildung (Anwärter Level 1)</li>
+                        <li class="booking-include-item2">Unterkunft während der Ausbildung und der Saison</li>
+                        <li class="booking-include-item3">Liftpass während der Ausbildung und der Saison</li>
+                        <li class="booking-include-item4">Jobgarantie als Skilehrer in Bad Gastein</li>
+                        <li class="booking-include-item5">Persönliche Betreuung und Training</li>
+                        <li class="booking-include-item6">Skilehrer-Uniform</li>
+                    </ul>
+                    <div class="booking-note">
+                        <strong class="booking-holiday-note-title">Wichtig:</strong>
+                        <p class="booking-holiday-note-text">Aktuell nur mit 4-Wochen-Ferienoption buchbar (zusätzlich €1.196).</p>
+                    </div>
+                </div>
+                <div class="booking-form-container">
+                    <h2 class="booking-form-title">Buchungsformular</h2>
+                    <form id="booking-form" class="booking-form">
+                        <div class="form-group">
+                            <label for="fullname" class="booking-name-label">Name <span class="required">*</span></label>
+                            <input type="text" id="fullname" name="fullname" class="booking-fullname-input" placeholder="Vor- und Nachname" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" class="booking-email-label">E-Mail <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" class="booking-email-input" placeholder="Ihre E-Mail-Adresse" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" class="booking-phone-label">Telefon <span class="required">*</span></label>
+
+                                <input type="tel" id="phone" name="phone" class="booking-phone-input" placeholder="Ihre Telefonnummer" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="birthdate" class="booking-birthdate-label">Geburtsdatum <span class="required">*</span></label>
+                                <input type="date" id="birthdate" name="birthdate" class="booking-birthdate-input" placeholder="tt.mm.jjjj" class="booking-birthdate-format" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="nationality" class="booking-nationality-label">Nationalität <span class="required">*</span></label>
+                                <input type="text" id="nationality" name="nationality" class="booking-nationality-input" placeholder="Ihre Nationalität" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="skill-level">Wahl der Skilehrerausbildung<span class="required">*</span></label>
+                            <select id="skill-level" name="skill-level" class="booking-skill-input" required>
+                                <option value="" disabled selected class="booking-skill-default">Für welche Skilehrerausbildung möchtest du dich anmelden?</option>
+                                <option value="beginner" class="booking-skill-beginner">Level 1 - Anwärter Skilehrer</option>
+                                <option value="intermediate" class="booking-skill-intermediate">Level 1 - Anwärter Skilehrer Dual(Ski und Board)</option>
+                                <option value="advanced" class="booking-skill-advanced">Level 2 - Landes LS1 Professions-Skilehrer</option>
+                                <option value="expert" class="booking-skill-expert">Level 3 - Landes LS2 Professions-Skilehrer</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="experience">Ski-Erfahrung <span class="required">*</span></label>
+                            <textarea id="experience" name="experience" class="booking-experience-input" rows="3" placeholder="Beschreiben Sie kurz Ihre Ski-Erfahrung" required></textarea>
+                        </div>
+                        
+
+                        <div class="booking-section">
+                            <h3 id="additional-options" class="booking-section-title">Zusatzoptionen</h3>
+                            <br>
+                            <div class="addon-section">
+                                <div class="addon-item">
+                                    <div class="form-group checkbox-group">
+                                        <input type="checkbox" style="margin-bottom: 2%;" id="cancellation-insurance" name="cancellation-insurance" checked>
+                                        <label for="cancellation-insurance">Abbestellungsversicherung 399,- EUR</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            
+                            <div class="addon-section">
+                                <div class="addon-label" style="font-weight:500">Abendkurs Deutsch nach dem Skitraining</div>
+                                <div class="select-wrapper">
+                                    <select id="german-course" name="german-course" class="full-width-select">
+                                        <option value="none" selected>keine Wahl</option>
+                                        <option value="basic">Grundkurs von Englisch auf Deutsch, 3 Abende á 2 Std.(160,- EUR)</option>
+                                        <option value="advanced">Fortgeschrittener Kurs von Englisch auf Deutsch, 5 Abende á 2 Std.(200,- EUR)</option>
+                                    </select>
+                                    <div class="select-arrow"></div>
+                                </div> 
+                            </div> 
+                            <br>
+
+                        <div class="form-group checkbox-group">
+                         <label>
+                             <input type="checkbox" name="holiday-option" class="booking-holiday-checkbox" checked>
+                             <span class="booking-holiday-label">4-Wochen-Ferienoption, zusätzlich €1.196</span>
+                         </label>
+                        </div>
+
+                        
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" name="terms" class="booking-terms-checkbox" required>
+                                <span class="booking-terms-label">Ich akzeptiere die Allgemeinen Geschäftsbedingungen <span class="required">*</span></span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn primary-btn booking-submit">Jetzt Platz reservieren</button>
+                        <p class="booking-submit-note">Durch das Absenden des Formulars reservieren Sie Ihren Platz und es wird eine Anzahlung von €1.000 fällig.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Info Section -->
+    <section id="booking-contact" class="section gray-section">
+        <div class="container">
+            <h2 class="section-title booking-contact-title">Fragen zur Buchung?</h2>
+            <p class="section-subtitle booking-contact-subtitle">Wir helfen Ihnen gerne weiter. Kontaktieren Sie uns per E-Mail oder Telefon.</p>
+            
+            <div class="contact-info-container">
+                <div class="contact-method">
+                    <div class="icon contact-email-icon">📧</div>
+                    <h3>E-Mail</h3>
+                    <p><a href="mailto:info@skischool-go.com">info@skischool-go.com</a></p>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="icon contact-phone-icon">📱</div>
+                    <h3>Telefon</h3>
+                    <p><a href="tel:+4366057575570">+43 660 57 57 57 0</a></p>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="icon contact-hours-icon">🕒</div>
+                    <h3>Öffnungszeiten</h3>
+                    <p>Mo-Fr: 9:00 - 17:00 Uhr</p>
+                </div>
+            </div>
+            
+            <a href="index.html" class="btn secondary-btn booking-back">Zurück zur Startseite</a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-section">
+                    <div class="footer-logo">SkiGap</div>
+                    <p>Die beste Skilehrerausbildung mit Jobgarantie</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon facebook"></a>
+                        <a href="#" class="social-icon instagram"></a>
+                        <a href="#" class="social-icon youtube"></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h4>Programm</h4>
+                        <ul>
+                            <li><a href="index.html#about">Ausbildung</a></li>
+                            <li><a href="index.html#services">Jobs</a></li>
+                            <li><a href="index.html#pricing">Preise</a></li>
+                        </ul>
+                    </div>
+                    <div class="f...
+[truncated]
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">SkiGap</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#about" class="nav-about">Über Uns</a></li>
+                    <li><a href="index.html#services" class="nav-services">Kurse</a></li>
+                    <li><a href="index.html#gallery" class="nav-gallery">Galerie</a></li>
+                    <li><a href="index.html#testimonials" class="nav-testimonials">Erfahrungen</a></li>
+                    <li><a href="index.html#pricing" class="nav-pricing">Preise</a></li>
+                    <li><a href="index.html#contact" class="nav-contact">Kontakt</a></li>
+                    <li><a href="booking.html" class="nav-booking active">Buchen</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+<!--
+    <section id="booking-hero" class="section dark-section">
+        <div class="container">
+            <h1 class="section-title booking-title">Skilehrerausbildung Buchen</h1>
+            <p class="section-subtitle booking-subtitle">Füllen Sie das Formular aus, um Ihren Platz für die Saison 2025/26 zu sichern</p>
+        </div>
+    </section>
+
+    <section class="section light-section">
+        <div class="container">
+            <div class="booking-container">
+                <div class="booking-info">
+                    <h2 class="booking-info-title">Programm Details</h2>
+                    <div class="program-details">
+                        <div class="detail-item">
+                            <span class="detail-label booking-dates-label">Daten:</span>
+                            <span class="detail-value booking-dates-value">Dezember 2025 - März/April 2026</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label booking-location-label">Ort:</span>
+                            <span class="detail-value booking-location-value">Bad Gastein, Österreich</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label booking-price-label">Preis:</span>
+                            <span class="detail-value booking-price-value">€5.995</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label booking-deposit-label">Anzahlung:</span>
+                            <span class="detail-value booking-deposit-value">€1.000 (bei Buchung fällig)</span>
+                        </div>
+                    </div>
+
+                    <h3 class="booking-includes-title">Im Preis enthalten:</h3>
+                    <ul class="includes-list">
+                        <li class="booking-include-item1">Österreichische Skilehrerausbildung (Anwärter Level 1)</li>
+                        <li class="booking-include-item2">Unterkunft während der Ausbildung und der Saison</li>
+                        <li class="booking-include-item3">Liftpass während der Ausbildung und der Saison</li>
+                        <li class="booking-include-item4">Jobgarantie als Skilehrer in Bad Gastein</li>
+                        <li class="booking-include-item5">Persönliche Betreuung und Training</li>
+                        <li class="booking-include-item6">Skilehrer-Uniform</li>
+                    </ul>
+
+                    <div class="booking-note">
+                        <strong class="booking-holiday-note-title">Wichtig:</strong>
+                        <p class="booking-holiday-note-text">Aktuell mit 4-Wochen-Ferienoption buchbar (zusätzlich €1.196).</p>
+                    </div>
+                </div>
+
+              <div class="booking-form-container">
+                    <div class="booking-form-container">
+                    <h2 class="booking-form-title">Buchungsformular</h2>
+                 <form id="booking-form" class="booking-form">       
+                        <div class="form-group">
+                            <label for="fullname">Name <span class="required">*</span></label>
+                            <input type="text" id="fullname" name="fullname" class="booking-fullname-input" placeholder="Vor- und Nachname" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-Mail <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" class="booking-email-input" placeholder="Ihre E-Mail-Adresse" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Telefon <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" class="booking-phone-input" placeholder="Ihre Telefonnummer" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="birthdate">Geburtsdatum <span class="required">*</span></label>
+                                <input type="date" id="birthdate" name="birthdate" class="booking-birthdate-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="nationality">Nationalität <span class="required">*</span></label>
+                                <input type="text" id="nationality" name="nationality" class="booking-nationality-input" placeholder="Ihre Nationalität" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address">Adresse <span class="required">*</span></label>
+                                <input type="text" id="address" name="address" placeholder="Geben Sie Ihre Adresse ein..." required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="zip">PLZ <span class="required">*</span></label>
+                                <input type="text" id="zip" name="zip" placeholder="PLZ eingeben..." required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="city">Ort <span class="required">*</span></label>
+                                <input type="text" id="city" name="city" placeholder="Ort eingeben..." required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="booker-country">Land *</label>
+                                <select id="booker-country" name="booker-country" required>
+                                    <option value="Deutschland" selected>Deutschland</option>
+                                    <option value="Österreich">Österreich</option>
+                                    <option value="Schweiz">Schweiz</option>
+                                    <option value="Dänemark">Dänemark</option>
+                                    <option value="other">Anderes Land</option>
+                                </select>
+                            </div>
+
+
+
+
+
+
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="skill-level">Ski-Können <span class="required">*</span></label>
+                            <select id="skill-level" name="skill-level" class="booking-skill-input" required>
+                                <option value="" disabled selected class="booking-skill-default">Bitte wählen Sie Ihr Ski-Level</option>
+                                <option value="beginner" class="booking-skill-beginner">Anfänger</option>
+                                <option value="intermediate" class="booking-skill-intermediate">Mittelstufe</option>
+                                <option value="advanced" class="booking-skill-advanced">Fortgeschritten</option>
+                                <option value="expert" class="booking-skill-expert">Experte</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="experience">Ski-Erfahrung <span class="required">*</span></label>
+                            <textarea id="experience" name="experience" class="booking-experience-input" rows="3" placeholder="Beschreiben Sie kurz Ihre Ski-Erfahrung" required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" name="holiday-option" class="booking-holiday-checkbox" checked>
+                                <span class="booking-holiday-label">4-Wochen-Ferienoption, zusätzlich €1.196</span>
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" name="terms" class="booking-terms-checkbox" required>
+                                <span class="booking-terms-label">Ich akzeptiere die Allgemeinen Geschäftsbedingungen <span class="required">*</span></span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn primary-btn booking-submit confetti">Jetzt Platz reservieren</button>
+                        <p class="booking-submit-note">Durch das Absenden des Formulars reservieren Sie Ihren Platz und es wird eine Anzahlung von €1.000 fällig.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking-contact" class="section gray-section">
+        <div class="container">
+            <h2 class="section-title booking-contact-title">Fragen zur Buchung?</h2>
+            <p class="section-subtitle booking-contact-subtitle">Wir helfen Ihnen gerne weiter. Kontaktieren Sie uns per E-Mail oder Telefon.</p>
+            
+            <div class="contact-info-container">
+                <div class="contact-method">
+                    <div class="icon contact-email-icon">📧</div>
+                    <h3>E-Mail</h3>
+                    <p><a href="mailto:info@skischool-go.com">info@skischool-go.com</a></p>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="icon contact-phone-icon">📱</div>
+                    <h3>Telefon</h3>
+                    <p><a href="tel:+436605757570">+43 660 57 57 57 0</a></p>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="icon contact-hours-icon">🕒</div>
+                    <h3>Öffnungszeiten</h3>
+                    <p>Mo-Fr: 9:00 - 17:00 Uhr</p>
+                </div>
+
+                 <div class="form-group">
+                            <label for="booker-address">Adresse *</label>
+                            <input type="text" id="booker-address" name="booker-address" placeholder="Geben Sie Ihre Adresse ein..." required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booker-zip">PLZ *</label>
+                                <input type="text" id="booker-zip" name="booker-zip" placeholder="PLZ eingeben..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booker-city">Ort *</label>
+                                <input type="text" id="booker-city" name="booker-city" placeholder="Ort eingeben..." required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="booker-country">Land *</label>
+                            <select id="booker-country" name="booker-country" required>
+                                <option value="Deutschland" selected>Deutschland</option>
+                                <option value="Österreich">Österreich</option>
+                                <option value="Schweiz">Schweiz</option>
+                                <option value="Dänemark">Dänemark</option>
+                                <option value="other">Anderes Land</option>
+                            </select>
+                        </div>
+
+
+
+
+
+
+            </div>
+            
+            <a href="index.html" class="btn secondary-btn booking-back">Zurück zur Startseite</a>
+        </div>
+    </section>
+-->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="footer-title">SkiGap</h3>
+                    <p class="footer-description">Ihr Weg zur professionellen Skilehrerkarriere. Wir bieten komplette Pakete mit Ausbildung, Job und Unterkunft in den schönsten Skigebieten Österreichs.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-links-title">Links</h3>
+                    <ul>
+                        <li><a href="index.html#about" class="nav-about">Über Uns</a></li>
+                        <li><a href="index.html#services" class="nav-services">Kurse</a></li>
+                        <li><a href="index.html#gallery" class="nav-gallery">Galerie</a></li>
+                        <li><a href="index.html#testimonials" class="nav-testimonials">Erfahrungen</a></li>
+                        <li><a href="index.html#pricing" class="nav-pricing">Preise</a></li>
+                        <li><a href="index.html#contact" class="nav-contact">Kontakt</a></li>
+                        <li><a href="booking.html" class="nav-booking">Buchen</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-contact-title">Kontakt</h3>
+                    <ul class="contact-info">
+                        <li><span>📧</span> info@skigap.com</li>
+                        <li><span>📱</span> +43 660 57 57 57 0</li>
+                        <li><span>📍</span> Bad Gastein, Österreich</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 SkiGap. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="language-switcher">
+        <button onclick="setLanguage('de')" class="lang-btn active" data-lang="de">🇩🇪 DE</button>
+        <button onclick="setLanguage('da')" class="lang-btn" data-lang="da">🇩🇰 DA</button>
+        <button onclick="setLanguage('en')" class="lang-btn" data-lang="en">🇬🇧 EN</button>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
