@@ -90,6 +90,7 @@ button {
 
 .dark-section .section-title {
     color: var(--white);
+    width: 100%;
 }
 
 .section-subtitle {
