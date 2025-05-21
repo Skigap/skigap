@@ -44,9 +44,9 @@ const translations = {
         en: 'LIMITED jobs left for the winter 25/26!'
     },
     'hero.title': {
-        de: 'Skilehrerausbildung und Job in Bad Gastein 2025/26',
-        da: 'Skilæreruddannelse og job i Bad Gastein 2025/26',
-        en: 'Ski Instructor Training and Job in Bad Gastein 2025/26'
+        de: 'Ausbildung und Job als Skilehrer in Österreich 2025/26',
+        da: 'Uddannelse og job som skilærer i Østrig 2025/26',
+        en: 'Ski Instructor Training and Job in Austria 2025/26'
     },
     'hero.requirement': {
         de: '4-WOCHEN-URLAUBSOPTION VERFÜGBAR',
@@ -408,9 +408,9 @@ const translations = {
 
     // Booking
     'booking.title': {
-        de: 'Skilehrerausbildung Buchen',
-        da: 'Book Skilæreruddannelse',
-        en: 'Book Ski Instructor Training'
+        de: 'Ausbildung mit Jobgarantie Buchen',
+        da: 'Book uddannelse med jobgaranti',
+        en: 'Book Training and Job Guarantee'
     },
     'booking.subtitle': {
         de: 'Füllen Sie das Formular aus, um Ihren Platz für die Saison 2025/26 zu sichern',
@@ -516,6 +516,11 @@ const translations = {
         de: 'Vor- und Nachname',
         da: 'For- og efternavn',
         en: 'First and last name'
+    },
+    'booking.address.input': {
+        de: 'Vollständige Postadresse',
+        da: 'Fuld postadresse',
+        en: 'Full postal address'
     },
     'booking.email.input': {
         de: 'Ihre E-Mail-Adresse',
