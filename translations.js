@@ -408,7 +408,7 @@ const translations = {
 
     // Booking
     'booking.title': {
-        de: 'Ausbildung mit Jobgarantie Buchen',
+        de: 'Ausbildung mit Jobgarantie buchen',
         da: 'Book uddannelse med jobgaranti',
         en: 'Book Training and Job Guarantee'
     },
