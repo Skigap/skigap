@@ -96,7 +96,7 @@ const translations = {
 
     // About
     'about.title': {
-        de: 'Die österreichische Skilehrerausbildung',
+        de: 'Ausbildung zum österreichischen Skilehrer',
         da: 'Den østrigske skilæreruddannelse',
         en: 'The Austrian Ski Instructor Training'
     },
