@@ -168,9 +168,9 @@ const translations = {
         en: 'Job Guarantee'
     },
     'services.guarantee.text': {
-        de: 'Garantierter Job in der Skischool GO nach bestandenem Kurs. Sicher Ihren Platz in einem der weltweit bekanntesten Skigebiete.',
-        da: 'Garanteret job i skiskolen i Skischool GO efter bestået kursus. Sikr dig en plads på et af verdens mest kendte skisportssteder.',
-        en: 'Guaranteed job at Skischool GO after passing the course. Secure your place in one of the world\'s most famous ski resorts.'
+        de: 'Garantierter Job nach bestandenem Kurs. Sicher Ihren Platz in einem der weltweit bekanntesten Skigebiete.',
+        da: 'Garanteret job efter bestået kursus. Sikr dig en plads på et af verdens mest kendte skisportssteder.',
+        en: 'Guaranteed job after passing the course. Secure your place in one of the world\'s most famous ski resorts.'
     },
     'services.accommodation.title': {
         de: 'Unterkunft',
@@ -178,9 +178,9 @@ const translations = {
         en: 'Accommodation'
     },
     'services.accommodation.text': {
-        de: 'Arrangierte Unterkunft während der Ausbildung und der gesamten Saison in Gehweite zum Zentrum von Bad Gastein und zum Skibus.',
-        da: 'Arrangeret bolig under uddannelsen og hele sæsonen i gå afstand til Bad Gastein centrum og skibus.',
-        en: 'Arranged accommodation during training and the entire season within walking distance of Bad Gastein town center and the ski bus.'
+        de: 'Arrangierte Unterkunft während der Ausbildung in Gehweite zum Zentrum von Bad Gastein und zum Skibus.',
+        da: 'Arrangeret bolig under uddannelsen i gå afstand til Bad Gastein centrum og skibus.',
+        en: 'Arranged accommodation during training within walking distance of Bad Gastein town center and the ski bus.'
     },
     'services.lift.title': {
         de: 'Liftpass & Uniform',
@@ -188,9 +188,9 @@ const translations = {
         en: 'Lift Pass & Uniform'
     },
     'services.lift.text': {
-        de: 'Kostenloser Liftpass während der Ausbildung und Saisonkarte während Ihrer Anstellung. Professionelle Skilehrer-Uniform wird gestellt.',
-        da: 'Gratis liftkort under uddannelsen og sæsonkort under din ansættelse. Professionel skiinstruktøruniform stilles til rådighed.',
-        en: 'Free lift pass during training and season pass during your employment. Professional ski instructor uniform is provided.'
+        de: 'Kostenloser Liftpass während der Ausbildung. Professionelle Skilehrer-Uniform wird gestellt.',
+        da: 'Gratis liftkort under uddannelsen. Professionel skiinstruktøruniform stilles til rådighed.',
+        en: 'Free lift pass during training. Professional ski instructor uniform is provided.'
     },
     'services.transport.title': {
         de: 'Professionelle Supervision',
@@ -638,10 +638,4 @@ const translations = {
     }
 };
 
-/*
-.booking.birthdate.date': {
-    de: 'tt.mm.jjjj'
-    da: 'dd.mm.yyyy'
-    en: 'dd.mm.åååå'
-},
-*/
+
