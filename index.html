@@ -9,12 +9,24 @@
     <link rel="icon" type="image/x-icon" src="./img/logo_small.png">
 
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  (function(){
-    emailjs.init("0To0EIApvxLbf3Kd3");
-  })();
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "0To0EIApvxLbf3Kd3",
+      });
+   })();
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script type="module">
+    import emailjs from 'https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js';
+    emailjs.init('service_gbc99nf'); //  User-ID
+  </script>
+  
 
 </head>
 
