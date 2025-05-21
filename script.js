@@ -186,12 +186,14 @@ function updateScrollSpy() {
 // Kontaktformular absenden
 function handleContactForm(event) {
     event.preventDefault();
+    console.log("Contact form submitted");
     
     // Formularfelder auslesen
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const subject = document.getElementById('subject').value.trim();
     const message = document.getElementById('message').value.trim();
+    const phone = document.getElementById('phone')?.value.trim() || '';
     
     // Einfache Validierung
     if (!name || !email || !message) {
@@ -199,19 +201,21 @@ function handleContactForm(event) {
         return;
     }
     
-    if (!isValidEmail(email)) {
+    if (!validateEmail(email)) {
         alert('Bitte geben Sie eine gültige E-Mail-Adresse ein.');
         return;
     }
     
     // Template-Parameter für EmailJS erstellen
     const templateParams = {
-        from_name: name,
-        from_email: email,
-        subject: subject || 'Kontaktanfrage von der Website',
+        name: name,
+        email: email,
+        title: subject || 'Kontaktanfrage von der Website',
         message: message,
-        reply_to: email
+        phone: phone
     };
+    
+    console.log("Sending email with params:", templateParams);
     
     // E-Mail mit EmailJS senden
     emailjs.send('service_gbc99nf', 'template_my07whj', templateParams)
@@ -219,15 +223,17 @@ function handleContactForm(event) {
             console.log('SUCCESS!', response.status, response.text);
             alert('Vielen Dank für Ihre Nachricht! Wir werden uns so schnell wie möglich bei Ihnen melden.');
             event.target.reset();
-        }, function(error) {
+        })
+        .catch(function(error) {
             console.log('FAILED...', error);
-            alert('Es gab ein Problem beim Senden Ihrer Nachricht. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt.');
+            alert('Es gab ein Problem beim Senden Ihrer Nachricht. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt unter info@skischool-go.com.');
         });
 }
 
 // Buchungsformular absenden
 function handleBookingForm(event) {
     event.preventDefault();
+    console.log("Booking form submitted");
     
     // Validieren
     if (!validateBookingForm()) {
@@ -235,19 +241,32 @@ function handleBookingForm(event) {
     }
     
     // Formularfelder auslesen
-    const fullname = document.getElementById('fullname').value.trim();
+    const firstName = document.getElementById('firstName')?.value.trim();
+    const lastName = document.getElementById('lastName')?.value.trim();
+    const fullname = firstName && lastName ? `${firstName} ${lastName}` : document.getElementById('fullname')?.value.trim();
+    
     const email = document.getElementById('email').value.trim();
     const phone = document.getElementById('phone').value.trim();
-    const birthdate = document.getElementById('birthdate').value;
+    const birthdate = document.getElementById('dateOfBirth')?.value || document.getElementById('birthdate')?.value || "";
     const nationality = document.getElementById('nationality').value.trim();
-    const skillLevel = document.getElementById('skill-level').value;
+    
+    // Adressfelder
+    const address = document.getElementById('address')?.value.trim() || "";
+    const zip = document.getElementById('zip')?.value.trim() || "";
+    const city = document.getElementById('city')?.value.trim() || "";
+    const bookerCountry = document.getElementById('booker-country')?.value.trim() || nationality || "";
+    
+    const skillLevel = document.getElementById('skill-level')?.value || "";
     const experience = document.getElementById('experience').value.trim();
     
     // Zusätzliche Optionen
-    const cancellationInsurance = document.getElementById('cancellation-insurance').checked;
-    const germanCourse = document.getElementById('german-course').value;
-    const holidayOption = document.querySelector('input[name="holiday-option"]').checked;
-    const terms = document.querySelector('input[name="terms"]').checked;
+    const cancellationInsurance = document.getElementById('cancellation-insurance')?.checked;
+    const germanCourse = document.getElementById('german-course')?.value || "none";
+    const holidayOption = document.querySelector('input[name="holiday-option"]')?.checked;
+    const terms = document.querySelector('input[name="terms"]')?.checked;
+    
+    // Generiere eine Bestellnummer
+    const orderId = 'ORD-' + Date.now().toString().slice(-6);
     
     // Template-Parameter für EmailJS erstellen
     const templateParams = {
@@ -256,43 +275,55 @@ function handleBookingForm(event) {
         phone: phone,
         birthdate: birthdate,
         nationality: nationality,
-        skill_level: skillLevel,
+        address: address,
+        zip: zip,
+        city: city,
+        'booker-country': bookerCountry,
+        'skill-level': skillLevel,
         experience: experience,
-        cancellation_insurance: cancellationInsurance ? 'Ja' : 'Nein',
-        german_course: germanCourse,
-        holiday_option: holidayOption ? 'Ja' : 'Nein',
-        terms: terms ? 'Akzeptiert' : 'Nicht akzeptiert'
+        'holiday-option': holidayOption ? 'Ja' : 'Nein',
+        terms: terms ? 'Akzeptiert' : 'Nicht akzeptiert',
+        'german-course': germanCourse,
+        'cancellation-insurance': cancellationInsurance ? 'Ja' : 'Nein',
+        order_id: orderId
     };
     
-    // E-Mail mit EmailJS senden - mit dem korrekten Template ID
+    console.log("Sending booking email with params:", templateParams);
+    
+    // E-Mail mit EmailJS senden
     emailjs.send('service_gbc99nf', 'template_rdjyyvd', templateParams)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             alert('Vielen Dank für Ihre Buchungsanfrage! Wir werden uns in Kürze per E-Mail mit weiteren Informationen bei Ihnen melden.');
             event.target.reset();
-        }, function(error) {
+        })
+        .catch(function(error) {
             console.log('FAILED...', error);
-            alert('Es gab ein Problem beim Senden Ihrer Buchungsanfrage. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt.');
+            alert('Es gab ein Problem beim Senden Ihrer Buchungsanfrage. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt via info@skischool-go.com.');
         });
 }
 
 // Buchungsformular validieren
 function validateBookingForm() {
-    const fullname = document.getElementById('fullname').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const birthdate = document.getElementById('birthdate').value;
-    const nationality = document.getElementById('nationality').value.trim();
-    const skillLevel = document.getElementById('skill-level').value;
-    const experience = document.getElementById('experience').value.trim();
-    const terms = document.querySelector('input[name="terms"]').checked;
+    const fullname = document.getElementById('fullname')?.value.trim();
+    const firstName = document.getElementById('firstName')?.value.trim();
+    const lastName = document.getElementById('lastName')?.value.trim();
+    const hasName = fullname || (firstName && lastName);
     
-    if (!fullname || !email || !phone || !birthdate || !nationality || !skillLevel || !experience) {
+    const email = document.getElementById('email')?.value.trim();
+    const phone = document.getElementById('phone')?.value.trim();
+    const birthdate = document.getElementById('dateOfBirth')?.value || document.getElementById('birthdate')?.value || "";
+    const nationality = document.getElementById('nationality')?.value.trim();
+    const skillLevel = document.getElementById('skill-level')?.value;
+    const experience = document.getElementById('experience')?.value.trim();
+    const terms = document.querySelector('input[name="terms"]')?.checked;
+    
+    if (!hasName || !email || !phone || !birthdate || !nationality || !skillLevel || !experience) {
         alert('Bitte füllen Sie alle Pflichtfelder aus.');
         return false;
     }
     
-    if (!isValidEmail(email)) {
+    if (!validateEmail(email)) {
         alert('Bitte geben Sie eine gültige E-Mail-Adresse ein.');
         return false;
     }
@@ -306,7 +337,7 @@ function validateBookingForm() {
 }
 
 // E-Mail-Validierung
-function isValidEmail(email) {
+function validateEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
@@ -346,16 +377,6 @@ function showNextTestimonial() {
     dots[currentTestimonialIndex].classList.add('active');
 }
 
-// Doppelte Formulare entfernen
-function removeExtraForms() {
-    const forms = document.querySelectorAll('#booking-form');
-    if (forms.length > 1) {
-        for (let i = 1; i < forms.length; i++) {
-            forms[i].remove();
-        }
-    }
-}
-
 // Smooth Scrolling für interne Links
 function setupSmoothScrolling() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -363,15 +384,25 @@ function setupSmoothScrolling() {
             e.preventDefault();
             
             const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
             
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
+            // Nur scrollen, wenn es ein gültiges Element ist
+            if (targetId !== "#" && document.querySelector(targetId)) {
+                document.querySelector(targetId).scrollIntoView({
                     behavior: 'smooth'
                 });
             }
         });
     });
+}
+
+// Extra Booking-Forms entfernen (falls durch CMS-Bug mehrfach vorhanden)
+function removeExtraForms() {
+    const forms = document.querySelectorAll('#booking-form');
+    
+    if (forms.length > 1) {
+        // Alle bis auf das erste Form-Element entfernen
+        for (let i = 1; i < forms.length; i++) {
+            forms[i].remove();
+        }
+    }
 }
