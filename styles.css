@@ -339,6 +339,7 @@ nav ul li a:hover, nav ul li a.active {
     font-size: 3rem;
     font-weight: 800;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .hero-requirement {
