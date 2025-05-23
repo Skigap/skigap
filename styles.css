@@ -456,7 +456,7 @@ nav ul li a:hover, nav ul li a.active {
 
 /* Banner */
 .banner {
-    height: 300px;
+    height: 120px;
     background-image: url('https://www.skigastein.com/fileadmin/_processed_/c/8/csm_gastein-bergpanorama-stubnerkogel-03_9c4e082f71.jpg');
     background-size: cover;
     background-position: center;
