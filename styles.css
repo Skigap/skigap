@@ -462,6 +462,9 @@ nav ul li a:hover, nav ul li a.active {
     background-position: center;
     background-attachment: fixed;
     position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+
 }
 
 .banner-2 {
