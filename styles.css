@@ -310,6 +310,7 @@ nav ul li a:hover, nav ul li a.active {
     color: var(--white);
     max-width: 900px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .limited-offer {
