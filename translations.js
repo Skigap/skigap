@@ -262,7 +262,7 @@ const translations = {
 
     // Testimonials
     'testimonials.title': {
-        de: 'Erfahrungsberichte',
+        de: 'Erfahrungen',
         da: 'Anmeldelser',
         en: 'Testimonials'
     },
