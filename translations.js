@@ -458,9 +458,9 @@ const translations = {
         en: 'Deposit:'
     },
     'booking.deposit.value': {
-        de: '€1.000 (bei Buchung fällig)',
-        da: '€1.000 (forfalder ved booking)',
-        en: '€1,000 (due at booking)'
+        de: '€ 800 (bei Buchung fällig)',
+        da: '€ 800 (forfalder ved booking)',
+        en: '€ 800 (due at booking)'
     },
     'booking.includes.title': {
         de: 'Im Preis enthalten:',
@@ -595,9 +595,9 @@ const translations = {
         en: 'Reserve your spot now'
     },
     'booking.submit.note': {
-        de: 'Durch das Absenden des Formulars reservieren Sie Ihren Platz und es wird eine Anzahlung von €1.000 fällig.',
-        da: 'Ved at indsende formularen reserverer du din plads, og et depositum på €1.000 vil forfalde til betaling.',
-        en: 'By submitting the form, you reserve your spot and a deposit of €1,000 will be due.'
+        de: 'Durch das Absenden des Formulars reservieren Sie Ihren Platz und es wird eine Anzahlung von € 800 fällig.',
+        da: 'Ved at indsende formularen reserverer du din plads, og et depositum på € 800 vil forfalde til betaling.',
+        en: 'By submitting the form, you reserve your spot and a deposit of € 800 will be due.'
     },
     'booking.contact.title': {
         de: 'Fragen zur Buchung?',
