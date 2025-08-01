@@ -158,9 +158,9 @@ const translations = {
         en: 'Training Course'
     },
     'services.training.text': {
-        de: 'Zweiwöchiger Skilehrerkurs von ca. 3. bis 17. Dezember 2025 mit österreichischem Skilehrerzertifikat (Anwärter Level 1).',
-        da: '2 ugers skiinstruktørkursus fra ca. d. 3-17. dec. 2025 med østrigsk skilærercertifikat Anwärter level 1.',
-        en: 'Two-week ski instructor course from approximately Dec. 3-17, 2025 with Austrian ski instructor certificate (Anwärter Level 1).'
+        de: 'Zweiwöchiger Skilehrerkurs von ca. 3. bis 13. Dezember 2025 mit österreichischem Skilehrerzertifikat (Anwärter Level 1).',
+        da: '2 ugers skiinstruktørkursus fra ca. d. 3-13. dec. 2025 med østrigsk skilærercertifikat Anwärter level 1.',
+        en: 'Two-week ski instructor course from approximately Dec. 3-13, 2025 with Austrian ski instructor certificate (Anwärter Level 1).'
     },
     'services.guarantee.title': {
         de: 'Jobgarantie',
@@ -218,9 +218,9 @@ const translations = {
         en: '4 Weeks Holiday Option'
     },
     'services.holiday.text': {
-        de: 'Aktuell ist es nur möglich, einen Job in Bad Gastein für die Saison 2025/26 zu bekommen, wenn Sie die 4-Wochen-Ferienoption wählen. Diese umfasst:',
-        da: 'Det er kun muligt at få job i Bad Gastein for sæsonen 2025/26, hvis du vælger 4-ugers ferietilvalget. Dette omfatter:',
-        en: 'Currently, it is only possible to get a job in Bad Gastein for the 2025/26 season if you choose the 4-week holiday option. This includes:'
+        de: 'Aktuell ist es möglich, einen Job in Bad Gastein für die Saison 2025/26 zu bekommen, wenn Sie die 4-Wochen-Ferienoption wählen. Diese umfasst:',
+        da: 'Det er p.t. muligt at få job i Bad Gastein for sæsonen 2025/26, hvis du vælger 4-ugers ferietilvalget. Dette omfatter:',
+        en: 'Currently, it is possible to get a job in Bad Gastein for the 2025/26 season if you choose the 4-week holiday option. This includes:'
     },
     'services.holiday.feature1': {
         de: '4 Wochen Urlaub mit extra Ski-Training während der Saison',
@@ -228,14 +228,14 @@ const translations = {
         en: '4 weeks of vacation with extra ski training during the season'
     },
     'services.holiday.feature2': {
-        de: 'Unterkunft und Liftpass auch während des Urlaubs',
-        da: 'Bolig og liftkort også under ferien',
-        en: 'Accommodation and lift pass also during the vacation'
+        de: 'Unterkunft und Liftpass gratis während des Urlaubs',
+        da: 'Bolig og liftkort gratis under ferien',
+        en: 'Accommodation and lift pass free during the vacation'
     },
     'services.holiday.feature3': {
-        de: 'Wöchentliche Trainingseinheiten zur Verbesserung Ihrer Skitechnik',
-        da: 'Ugentlige træninger til forbedring af din skiteknik',
-        en: 'Weekly training sessions to improve your ski technique'
+        de: 'Wöchentliche gratis Trainingseinheiten zur Verbesserung Ihrer Skitechnik',
+        da: 'Ugentlige gratis træninger til forbedring af din skiteknik',
+        en: 'Weekly free training sessions to improve your ski technique'
     },
     'services.holiday.feature4': {
         de: 'Zusätzliche Kosten: € 299,- pro Woche (1.196 EUR insgesamt)',
@@ -304,7 +304,7 @@ const translations = {
         en: '10 days Preparatory course in Austria (23.11.-02.12.2025)'
     },
     'pricing.program.feature2': {
-        de: '10 Tage Skilehrerkurs (03.12.-13.12.2025)',
+        de: '10 Tage Prüfungskurs (03.12.-13.12.2025)',
         da: '10 dage ugers skiinstruktørkursus (03.12.-13.12.2025)',
         en: '10 days ski instructor course (03.12.-13.12.2025)'
     },
@@ -334,9 +334,9 @@ const translations = {
         en: 'Additional Information'
     },
     'pricing.additional.text': {
-        de: 'Die zusätzlichen Kosten für die 4-Wochen-Ferienoption betragen € 299 pro Woche (insgesamt 1.196 EUR). Alle Preise verstehen sich inklusive der angegebenen Leistungen. Fragen zu Ratenzahlungen oder zusätzlichen Optionen? Kontaktieren Sie uns!',
-        da: 'De ekstra omkostninger for 4-ugers ferievalget er € 299 pr. uge (i alt 1.196 EUR). Alle priser inkluderer de angivne ydelser. Spørgsmål om ratebetaling eller ekstra tilvalg? Kontakt os!',
-        en: 'The additional cost for the 4-week holiday option is € 299 per week (total 1,196 EUR). All prices include the services indicated. Questions about installment payments or additional options? Contact us!'
+        de: 'Die zusätzlichen Kosten für die 4-Wochen-Ferienoption-in-Januar betragen € 299 pro Woche (insgesamt 1.196 EUR). Alle Preise verstehen sich inklusive der angegebenen Leistungen. Fragen zu Ratenzahlungen oder zusätzlichen Optionen? Kontaktieren Sie uns!',
+        da: 'De ekstra omkostninger for 4-ugers-ferievalget-i-januar er € 299 pr. uge (i alt 1.196 EUR). Alle priser inkluderer de angivne ydelser. Spørgsmål om ratebetaling eller ekstra tilvalg? Kontakt os!',
+        en: 'The additional cost for the 4-week-holiday-in-January option is € 299 per week (total 1,196 EUR). All prices include the services indicated. Questions about installment payments or additional options? Contact us!'
     },
     'pricing.questions': {
         de: 'Fragen zu unseren Angeboten?',
@@ -473,14 +473,14 @@ const translations = {
         en: 'Austrian ski instructor training (Anwärter Level 1)'
     },
     'booking.include.item2': {
-        de: 'Unterkunft während der Ausbildung und der Saison',
-        da: 'Indkvartering under uddannelsen og i sæsonen',
-        en: 'Accommodation during training and the season'
+        de: 'Unterkunft Gratis während der Ausbildung und halber Preis während der Saison',
+        da: 'Indkvartering Gratis under uddannelsen og til halv pris i sæsonen',
+        en: 'Accommodation Free during training and half price during the season'
     },
     'booking.include.item3': {
-        de: 'Liftpass während der Ausbildung und der Saison',
-        da: 'Liftkort under uddannelsen og i sæsonen',
-        en: 'Lift pass during training and the season'
+        de: 'Liftpass gratis während der Ausbildung und vergünstigt während der Saison',
+        da: 'Liftkort gratis under uddannelsen og nedsat i sæsonen',
+        en: 'Lift pass free during training and discounted during the season'
     },
     'booking.include.item4': {
         de: 'Jobgarantie als Skilehrer in Bad Gastein',
