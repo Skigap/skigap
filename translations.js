@@ -39,14 +39,14 @@ const translations = {
 
     // Hero
     'hero.limited': {
-        de: 'Begrenzte Plätze für Winter 25/26!',
-        da: 'FÅ jobs tilbage for vinteren 25/26!',
-        en: 'LIMITED jobs left for the winter 25/26!'
+        de: 'Begrenzte Plätze für Winter 26/27!',
+        da: 'FÅ jobs tilbage for vinteren 26/27!',
+        en: 'LIMITED jobs left for the winter 26/27!'
     },
     'hero.title': {
-        de: 'Ausbildung und Job als Skilehrer in Österreich 2025/26',
-        da: 'Uddannelse og job som skilærer i Østrig 2025/26',
-        en: 'Ski Instructor Training and Job in Austria 2025/26'
+        de: 'Ausbildung und Job als Skilehrer in Österreich 2026/27',
+        da: 'Uddannelse og job som skilærer i Østrig 2026/27',
+        en: 'Ski Instructor Training and Job in Austria 2026/27'
     },
     'hero.requirement': {
         de: '4-WOCHEN-URLAUBSOPTION VERFÜGBAR',
@@ -59,9 +59,9 @@ const translations = {
         en: 'Complete package with ski instructor training, guaranteed job, accommodation, skiing, and lots of new ski friends'
     },
     'hero.feature1': {
-        de: 'Skilehrersaison in Österreich Dez. 2025 - April 2026',
-        da: 'En sæson som skilærer i Østrig dec. 2025 - April 2026',
-        en: 'A season as a ski instructor in Austria Dec. 2025 - April 2026'
+        de: 'Skilehrersaison in Österreich 15. Dez. 2026 - 15. April 2027',
+        da: 'En sæson som skilærer i Østrig 15. dec. 2026 - 15. April 2027',
+        en: 'A season as a ski instructor in Austria, Dec. 15, 2026 - April 15, 2027'
     },
     'hero.feature2': {
         de: 'Österreichische Skilehrerausbildung + Vorbereitungskurs Englisch - Deutsch (optional)',
@@ -158,9 +158,9 @@ const translations = {
         en: 'Training Course'
     },
     'services.training.text': {
-        de: 'Zweiwöchiger Skilehrerkurs von ca. 3. bis 13. Dezember 2025 mit österreichischem Skilehrerzertifikat (Anwärter Level 1).',
-        da: '2 ugers skiinstruktørkursus fra ca. d. 3-13. dec. 2025 med østrigsk skilærercertifikat Anwärter level 1.',
-        en: 'Two-week ski instructor course from approximately Dec. 3-13, 2025 with Austrian ski instructor certificate (Anwärter Level 1).'
+        de: 'Zweiwöchiger Skilehrerkurs von ca. 3. bis 13. Dezember 2026 mit österreichischem Skilehrerzertifikat (Anwärter Level 1).',
+        da: '2 ugers skiinstruktørkursus fra ca. d. 3-13. dec. 2026 med østrigsk skilærercertifikat Anwärter level 1.',
+        en: 'Two-week ski instructor course from approximately Dec. 3-13, 2026 with Austrian ski instructor certificate (Anwärter Level 1).'
     },
     'services.guarantee.title': {
         de: 'Jobgarantie',
@@ -218,9 +218,9 @@ const translations = {
         en: '4 Weeks Holiday Option'
     },
     'services.holiday.text': {
-        de: 'Aktuell ist es möglich, einen Job in Bad Gastein für die Saison 2025/26 zu bekommen, wenn Sie die 4-Wochen-Ferienoption wählen. Diese umfasst:',
-        da: 'Det er p.t. muligt at få job i Bad Gastein for sæsonen 2025/26, hvis du vælger 4-ugers ferietilvalget. Dette omfatter:',
-        en: 'Currently, it is possible to get a job in Bad Gastein for the 2025/26 season if you choose the 4-week holiday option. This includes:'
+        de: 'Aktuell ist es möglich, einen Job in Bad Gastein für die Saison 2026/27 zu bekommen, wenn Sie die 4-Wochen-Ferienoption wählen. Diese umfasst:',
+        da: 'Det er p.t. muligt at få job i Bad Gastein for sæsonen 2026/27, hvis du vælger 4-ugers ferietilvalget. Dette omfatter:',
+        en: 'Currently, it is possible to get a job in Bad Gastein for the 2026/27 season if you choose the 4-week holiday option. This includes:'
     },
     'services.holiday.feature1': {
         de: '4 Wochen Urlaub mit extra Ski-Training während der Saison',
@@ -238,9 +238,9 @@ const translations = {
         en: 'Weekly free training sessions to improve your ski technique'
     },
     'services.holiday.feature4': {
-        de: 'Zusätzliche Kosten: € 299,- pro Woche (1.196 EUR insgesamt)',
-        da: 'Ekstra betaling: € 299,- pr. uge = 1.196 EUR i alt',
-        en: 'Additional cost: € 299,- per week (1.196 EUR in total)'
+        de: 'Kosten: € 299,- pro Woche (1.196 EUR insgesamt)',
+        da: 'Betaling: € 299,- pr. uge = 1.196 EUR i alt',
+        en: 'Costs: € 299,- per week (1.196 EUR in total)'
     },
     'services.apply': {
         de: 'Jetzt bewerben',
@@ -299,14 +299,14 @@ const translations = {
         en: 'EUR'
     },
     'pricing.program.feature1': {
-        de: '10 Tage Vorbereitungskurs in Österreich (23.11.-02.12.2025)',
-        da: '10 dage Forberedelseskursus i Østrig (23.11.-02.12.2025)',
-        en: '10 days Preparatory course in Austria (23.11.-02.12.2025)'
+        de: '10 Tage Vorbereitungskurs in Österreich (23.11.-02.12.2026)',
+        da: '10 dage Forberedelseskursus i Østrig (23.11.-02.12.2026)',
+        en: '10 days Preparatory course in Austria (23.11.-02.12.2026)'
     },
     'pricing.program.feature2': {
-        de: '10 Tage Prüfungskurs (03.12.-13.12.2025)',
-        da: '10 dage ugers skiinstruktørkursus (03.12.-13.12.2025)',
-        en: '10 days ski instructor course (03.12.-13.12.2025)'
+        de: '10 Tage Prüfungskurs (03.12.-13.12.2026)',
+        da: '10 dage ugers skiinstruktørkursus (03.12.-13.12.2026)',
+        en: '10 days ski instructor course (03.12.-13.12.2026)'
     },
     'pricing.program.feature3': {
         de: 'Österreichisches Skilehrerzertifikat',
@@ -413,9 +413,9 @@ const translations = {
         en: 'Book Training and Job Guarantee'
     },
     'booking.subtitle': {
-        de: 'Füllen Sie das Formular aus, um Ihren Platz für die Saison 2025/26 zu sichern',
-        da: 'Udfyld formularen for at sikre din plads til sæsonen 2025/26',
-        en: 'Fill out the form to secure your spot for the 2025/26 season'
+        de: 'Füllen Sie das Formular aus, um Ihren Platz für die Saison 2026/27 zu sichern',
+        da: 'Udfyld formularen for at sikre din plads til sæsonen 2026/27',
+        en: 'Fill out the form to secure your spot for the 2026/27 season'
     },
     'booking.info.title': {
         de: 'Programm Details',
